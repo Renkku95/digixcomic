@@ -43,7 +43,7 @@ table {
 
 
 
-/*Omat tyylimäärittelyt*/
+/*My own style*/
 
 html {
 	height:100%
@@ -66,22 +66,61 @@ header { /*header*/
 	height:80px;
 }
 
-#logo {
+#logo { /*website logo*/
 	display:inline-block;
+	float:left;
 }
 
-#profile {
+#profile { /*place for the profile information, box*/
 	float:right;
 	display:inline-block;
 	width:164px;
+	background-color:white;
 	
+	margin-top:1.2em;
+	margin-right: 1em;
+	
+}
+
+#profilepic { /*profile picture*/
+	float:right;
+	display:inline-block;
+}
+
+#searchbox { /*place for the searchbar*/
+	display:inline-block;
+	margin-top:1.2em;
+	margin-left:2em;
+	margin-right:2em;
+	width: 30%;	/*think about this*/
+}
+
+/*searchbar coding starts here*/
+
+input[type=text] {
+	width:100%;
+	height:40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+	font-size:20px;
+}
+
+/*input[type=text]:focus {
+	width: 100%;
+}*/ /*this thing changes the size of the searchbar when it's clicked*/
+
+/*searchbar coding ends here*/
+
+
+#menubtnblock {
+	margin:5px;
 }
 
 /*hidden navigation style starts here*/
 
 .sidenav {
 	margin-top:80px;
-	height: 60%;
+	height: 100%;
 	width: 0;
 	position: fixed;
 	z-index: 1;
@@ -116,6 +155,7 @@ header { /*header*/
 }
 
 /*hidden navigation style ends*/
+
 
 #main { /*this is the page next to the hidden navigation*/
 	transition: margin-left .5s;
